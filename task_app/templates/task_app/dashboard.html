@@ -1,0 +1,10 @@
+{% extends 'task_app/base.html' %}
+
+{% block title %} Dashboard {% endblock %}
+
+
+{% block content %}
+<p>Welcome to your dashboard now you can see data </p>
+<a href="{% url "user_logout" %}"> Logout </a>
+{% endblock %}
+

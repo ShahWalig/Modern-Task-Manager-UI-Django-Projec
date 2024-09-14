@@ -1,0 +1,15 @@
+{% extends 'task_app/base.html' %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+<h1>Register</h1>
+
+<form method="POST" class="registration-form">
+    {% csrf_token %}
+    {{ registerform.as_p }}
+    <input type="submit" value="Register"/>
+<button onclick="location.href='{% url 'homepage' %}'">Home page</button>
+
+</form>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'task_app/base.html' %}
+{% block title %} Login{% endblock %}
+
+{% block content %}
+
+<h1> Log In</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{ loginform.as_p }}
+<button type="submit" id="loginButton">Login</button>
+
+</form>
+<button onclick="location.href='{% url 'homepage' %}'">Home page</button>
+
+{% endblock %}

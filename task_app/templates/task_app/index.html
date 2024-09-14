@@ -1,0 +1,11 @@
+<!-- index.html -->
+{% extends 'task_app/base.html' %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+<h1>Home Page</h1>
+
+<button onclick="location.href='{% url 'register' %}'">Register</button>
+<button onclick="location.href='{% url 'my_login' %}'">Login</button>
+{% endblock %}
